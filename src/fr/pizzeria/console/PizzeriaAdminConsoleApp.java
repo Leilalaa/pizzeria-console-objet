@@ -104,7 +104,7 @@ public class PizzeriaAdminConsoleApp {
 					// On parcours le tableau, si on retrouve le code, maj de la pizza
 					for(int i = 0; i<pizzas.length; i++){
 						
-						if(pizzas[i].getCode().equals(choixCode) && pizzas[i]!=null){
+						if(pizzas[i].getCode().equals(choixCode)){
 							
 							System.out.println("Veuillez saisir le code\n");
 							pizzas[i].setCode(sc.next());
@@ -112,6 +112,7 @@ public class PizzeriaAdminConsoleApp {
 							pizzas[i].setNom(sc.next());
 							System.out.println("Veuillez saisir le prix\n");
 							pizzas[i].setPrix(sc.nextDouble());
+							break;
 							
 						}
 					}
