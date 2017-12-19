@@ -35,7 +35,7 @@ public class PizzeriaAdminConsoleApp {
 		double choixPrix = 0;
 		
 		// Ouverture du scanner
-		Scanner scInt = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 
 
 		// Affichage du menu du programme
@@ -51,7 +51,7 @@ public class PizzeriaAdminConsoleApp {
 
 			System.out.println("Votre choix : ");
 			
-			choixMenu = scInt.nextInt();
+			choixMenu = sc.nextInt();
 			
 			
 
@@ -61,7 +61,7 @@ public class PizzeriaAdminConsoleApp {
 			case 1:
 				System.out.println("Liste des pizzas");
 				for (int i = 0; pizzas[i]!=null; i++) {
-					System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + ")");
+					System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + " €)");
 				 }
 				
 				
@@ -71,35 +71,77 @@ public class PizzeriaAdminConsoleApp {
 				System.out.println("Ajout d\'une nouvelle pizza \n");
 				
 				System.out.println("Veuillez saisir le code\n");
-				choixCode = scInt.next();
+				choixCode = sc.next();
 				System.out.println("Veuillez saisir le nom (sans espace)\n");
-				choixNom = scInt.next();
+				choixNom = sc.next();
 				System.out.println("Veuillez saisir le prix\n");
-				choixPrix = scInt.nextDouble();
+				choixPrix = sc.nextDouble();
 				
 				// On ajoute la pizza au tableau
 				for(int i = 0; i<pizzas.length; i++){
 					if (pizzas[i]==null){
 						pizzas[i]= new Pizza(i,choixCode,choixNom,choixPrix);
+						break;
 					}
 				}
 				
 				break;
 
 			case 3:
+				
 				System.out.println("Mise à jour d\'une pizza");
 				
 				for (int i = 0; pizzas[i]!=null; i++) {
 					System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + ")");
 				 }
 				
-				System.out.println("Mise à jour d\'une pizza");
-				System.out.println("Mise à jour d\'une pizza");
+				System.out.println("Veuillez choisir la pizza a modifier\n");
+				System.out.println("99 pour abandonner\n");
+				choixCode = sc.next();
+				
+				if(choixCode!="99"){
+					
+					// On parcours le tableau, si on retrouve le code, maj de la pizza
+					for(int i = 0; i<pizzas.length; i++){
+						
+						if(pizzas[i].getCode().equals(choixCode) && pizzas[i]!=null){
+							
+							System.out.println("Veuillez saisir le code\n");
+							pizzas[i].setCode(sc.next());
+							System.out.println("Veuillez saisir le nom (sans espace)\n");
+							pizzas[i].setNom(sc.next());
+							System.out.println("Veuillez saisir le prix\n");
+							pizzas[i].setPrix(sc.nextDouble());
+							
+						}
+					}
+				}
 				
 				break;
 
 			case 4:
+				
 				System.out.println("Suppression d\'une pizza");
+				
+				for (int i = 0; pizzas[i]!=null; i++) {
+					System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + ")");
+				}
+				System.out.println("Veuillez choisir la pizza a modifier\n");
+				System.out.println("99 pour abandonner\n");
+				choixCode = sc.next();
+				
+				if(choixCode!="99"){
+					
+					for (int i = 0; pizzas[i]!=null; i++) {
+						if(pizzas[i].getCode().equals(choixCode)){
+							
+							pizzas[i]=null;
+							break;
+							
+						}
+					}
+					
+				}
 				
 				break;
 			}
@@ -115,7 +157,7 @@ public class PizzeriaAdminConsoleApp {
 
 		
 
-		scInt.close();
+		sc.close();
 	}
 
 }
