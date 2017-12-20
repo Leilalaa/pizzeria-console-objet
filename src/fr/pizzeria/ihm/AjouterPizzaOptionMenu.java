@@ -1,5 +1,7 @@
 package fr.pizzeria.ihm;
 import java.util.Scanner;
+
+import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.model.Pizza;
 
 
@@ -13,8 +15,8 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 	String choixNom;
 	double choixPrix = 0;
 	
-	public AjouterPizzaOptionMenu(Scanner sc, Pizza[] pizzas) {
-		super(sc, pizzas);
+	public AjouterPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
+		super(sc, dao);
 
 	}
 	
@@ -32,14 +34,8 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		choixNom = sc.next();
 		System.out.println("Veuillez saisir le prix\n");
 		choixPrix = sc.nextDouble();
-		
-		// On ajoute la pizza au tableau
-		for(int i = 0; i<pizzas.length; i++){
-			if (pizzas[i]==null){
-				pizzas[i]= new Pizza(i,choixCode,choixNom,choixPrix);
-				break;
-			}
-		}
+		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix);
+		dao.saveNewPizza(pizza);
 	}
 
 }
