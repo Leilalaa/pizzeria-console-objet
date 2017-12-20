@@ -4,11 +4,11 @@ import fr.pizzeria.model.Pizza;
 
 public class PizzaDaoImpl {
 	
-	public Pizza[] pizzas = new Pizza[100];
+	public Pizza[] pizzas;
 	
 	public PizzaDaoImpl(){
 		
-		
+		Pizza[] pizzas = new Pizza[100];
 		pizzas[0] = new Pizza(0,"PEP","Peperoni",12.5);
 		pizzas[1] = new Pizza(1,"MAR","Margherita",14.0);
 		pizzas[2] = new Pizza(2,"REIN","La Reine",11.5);
@@ -18,6 +18,21 @@ public class PizzaDaoImpl {
 		pizzas[6] = new Pizza(6,"ORI","L\'orientale",13.5);
 		pizzas[7] = new Pizza(7,"IND","L\'indienne",14.5);
 		
+	}
+	
+	public Pizza[] findAllPizzas(){
+		return pizzas;
+	}
+	
+	@Override
+	public boolean saveNewPizza(Pizza pizza){
+		
+		for(int i = 0; i<pizzas.length; i++){
+			if (pizzas[i]==null){
+				pizzas[i]= pizza;
+				break;
+			}	
+		}
 	}
 
 }

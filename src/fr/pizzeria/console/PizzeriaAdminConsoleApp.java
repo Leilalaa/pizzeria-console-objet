@@ -49,7 +49,7 @@ public class PizzeriaAdminConsoleApp {
 		Scanner sc = new Scanner(System.in);
 
 		// Création des liens avec les autres classes
-		PizzaDaoImpl dao = new PizzaDaoImpl;
+		//PizzaDaoImpl dao = new PizzaDaoImpl;
 		ListerPizzaOptionMenu lister = new ListerPizzaOptionMenu(sc, pizzas);
 		AjouterPizzaOptionMenu ajouter = new AjouterPizzaOptionMenu(sc, pizzas);
 		ModifierPizzaOptionMenu modifier = new ModifierPizzaOptionMenu(sc, pizzas);
