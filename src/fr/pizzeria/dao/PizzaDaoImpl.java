@@ -49,26 +49,16 @@ public class PizzaDaoImpl {
 	
 	// Modifier une pizza
 	
-	public boolean updatePizza(String choixCode){
+	public boolean updatePizza(String choixCode, Pizza pizza){
 	
-		Scanner sc = new Scanner(System.in);
-		// On parcours le tableau, si on retrouve le code, maj de la pizza
 		for(int i = 0; i<pizzas.length; i++){
-			
-			if(pizzas[i].getCode().equals(choixCode)){
-				
-				System.out.println("Veuillez saisir le code\n");
-				pizzas[i].setCode(sc.next());
-				System.out.println("Veuillez saisir le nom (sans espace)\n");
-				pizzas[i].setNom(sc.next());
-				System.out.println("Veuillez saisir le prix\n");
-				pizzas[i].setPrix(sc.nextDouble());
-				sc.close();
+			pizza.affiche();
+			if(pizzas[i] != null && pizzas[i].getCode().equals(choixCode)){
+				pizzas[i] = pizza;
 				break;
-				
-			
 			}
 		}
+		
 		return false;
 	}
 	

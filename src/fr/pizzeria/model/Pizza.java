@@ -39,7 +39,12 @@ public class Pizza {
 			this.prix = prix;
 		}
 		
-
+	// Fonction permettant d'afficher les pizzas
+		
+		public void affiche(){
+			
+			System.out.println( code + " -> " + nom + "(" + prix + " €)");
+		}
 
 
 }

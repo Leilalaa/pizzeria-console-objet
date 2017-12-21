@@ -2,6 +2,7 @@ package fr.pizzeria.ihm;
 import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
+import fr.pizzeria.model.Pizza;
 
 
 
@@ -29,11 +30,31 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 		System.out.println("99 pour abandonner\n");
 		String choixCode = sc.next();
 		
-		if(choixCode!="99"){
+		System.out.println("Veuillez saisir le code\n");
+		String newCode  = sc.next();
+		System.out.println("Veuillez saisir le nom (sans espace)\n");
+		String newNom = sc.next();
+		System.out.println("Veuillez saisir le prix\n");
+		double newPrix = sc.nextDouble();
+
 		
-			dao.updatePizza(choixCode);
+		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix));
 		
-		}
+//		if(choixCode!="99"){
+//			for(int i = 0; i<pizzas.length; i++){
+//				
+//				if(pizzas[i].getCode().equals(choixCode)){
+//					
+//					System.out.println("Veuillez saisir le code\n");
+//					pizzas[i].setCode(sc.next());
+//					System.out.println("Veuillez saisir le nom (sans espace)\n");
+//					pizzas[i].setNom(sc.next());
+//					System.out.println("Veuillez saisir le prix\n");
+//					pizzas[i].setPrix(sc.nextDouble());
+//					break;
+//			dao.updatePizza();
+		
+//		}
 	
 	}
 					
