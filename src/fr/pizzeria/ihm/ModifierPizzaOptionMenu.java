@@ -46,7 +46,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 
 		
 		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix));
-		
+//		
 //		if(choixCode!="99"){
 //			for(int i = 0; i<pizzas.length; i++){
 //				

@@ -37,8 +37,9 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		
 		if(choixCode!="99"){
 			// On parcours le tableau, si on retrouve le code, maj de la pizza
+
 			dao.deletePizza(choixCode);
-					
+//					
 				
 		}
 			

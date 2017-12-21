@@ -1,61 +1,57 @@
 package fr.pizzeria.dao;
 
+import java.util.ArrayList;
 
 import fr.pizzeria.model.Pizza;
 
+
+
 public class PizzaDaoImpl {
 	
-	public Pizza[] pizzas;
+	public ArrayList<Pizza> listePizza = new ArrayList<>();
 	
 	public PizzaDaoImpl(){
 		
-		pizzas = new Pizza[100];
-		pizzas[0] = new Pizza("PEP","Peperoni",12.5);
-		pizzas[1] = new Pizza("MAR","Margherita",14.0);
-		pizzas[2] = new Pizza("REIN","La Reine",11.5);
-		pizzas[3] = new Pizza("FRO","La 4 fromages",12.0);
-		pizzas[4] = new Pizza("CAN","La cannibale",12.5);
-		pizzas[5] = new Pizza("SAV","La savoyarde",13.0);
-		pizzas[6] = new Pizza("ORI","L\'orientale",13.5);
-		pizzas[7] = new Pizza("IND","L\'indienne",14.5);
+		listePizza.add(new Pizza("PEP","Peperoni",12.5));
+		listePizza.add(new Pizza("MAR","Margherita",14.0));
+		listePizza.add(new Pizza("REIN","La Reine",11.5));
+		listePizza.add(new Pizza("FRO","La 4 fromages",12.0));
+		listePizza.add(new Pizza("CAN","La cannibale",12.5));
+		listePizza.add(new Pizza("SAV","La savoyarde",13.0));
+		listePizza.add(new Pizza("ORI","L\'orientale",13.5));
+		listePizza.add(new Pizza("IND","L\'indienne",14.5));
+		
 		
 	}
 	
 	// Lister les pizzas
-	public Pizza[] findAllPizzas(){
-		return pizzas;
+	public ArrayList<Pizza> findAllPizzas(){
+		return listePizza;
 	}
 	
 	// Ajouter une pizza
 	public boolean saveNewPizza(Pizza pizza) throws SavePizzaException {
-		
-		boolean pizzaSauvegarde = false; // On verifie qu'on est bien rentré ds boucle sinon on génere exception
-		
-		for(int i = 0; i<pizzas.length; i++){
-			if (pizzas[i]==null){
-				pizzas[i]= pizza;
-				pizzaSauvegarde = true;
-				break;
-			}	
-		}
-		
-		if (!pizzaSauvegarde){
-			throw new SavePizzaException("Le tableau est plein");
-		}
-		
+	
+		listePizza.add(pizza);
 		return false;
 	}
+		
+	
 	
 	// Modifier une pizza
 	
 	public boolean updatePizza(String choixCode, Pizza pizza){
 	
-		for(int i = 0; i<pizzas.length; i++){
+		for(Pizza p : this.listePizza){
 
-			if(pizzas[i] != null && pizzas[i].getCode().equals(choixCode)){
-				pizzas[i] = pizza;
+			if(p.getCode().equals(choixCode)){
+
+				this.listePizza.set(this.listePizza.indexOf(p), pizza);
+
 				break;
+
 			}
+
 		}
 		
 		return false;
@@ -65,17 +61,23 @@ public class PizzaDaoImpl {
 	
 	public boolean deletePizza(String choixCode){
 		// On parcours le tableau, si on retrouve le code, maj de la pizza
-		for (int i = 0; pizzas[i]!=null; i++) {
+		Pizza pToDelete = null;
+		
+		for(Pizza p : this.listePizza){
 
-			if(pizzas[i] != null && pizzas[i].getCode().equals(choixCode)){
-				pizzas[i]=null;
-			
-				break;
+			if(p.getCode().equals(choixCode)){
 				
-			
-			}
-		}
-		return false;
-	}
+				this.listePizza.remove(p);
+				return true;
 
+			}
+
+		
+		}
+		
+		
+		
+		return false;
+
+	}
 }

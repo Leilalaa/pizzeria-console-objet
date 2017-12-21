@@ -4,6 +4,7 @@ public class Pizza {
 	
 	// Attributs
 
+//		private static int crId;
 		public String code;
 		public String nom;
 		public double prix;
@@ -12,6 +13,7 @@ public class Pizza {
 		
 		public Pizza(String code, String nom, double prix) {
 			super();
+//			this.crId= crId;
 			this.code = code;
 			this.nom = nom;
 			this.prix = prix;
