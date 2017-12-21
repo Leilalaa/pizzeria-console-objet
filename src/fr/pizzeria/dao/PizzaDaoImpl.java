@@ -1,6 +1,5 @@
 package fr.pizzeria.dao;
 
-import java.util.Scanner;
 
 import fr.pizzeria.model.Pizza;
 
@@ -52,7 +51,7 @@ public class PizzaDaoImpl {
 	public boolean updatePizza(String choixCode, Pizza pizza){
 	
 		for(int i = 0; i<pizzas.length; i++){
-			pizza.affiche();
+
 			if(pizzas[i] != null && pizzas[i].getCode().equals(choixCode)){
 				pizzas[i] = pizza;
 				break;
@@ -65,17 +64,12 @@ public class PizzaDaoImpl {
 	// Supprimer une pizza
 	
 	public boolean deletePizza(String choixCode){
-		
-		Scanner sc = new Scanner(System.in);
 		// On parcours le tableau, si on retrouve le code, maj de la pizza
 		for (int i = 0; pizzas[i]!=null; i++) {
 
-			if(pizzas[i].getCode().equals(choixCode)){
-
-				
-
+			if(pizzas[i] != null && pizzas[i].getCode().equals(choixCode)){
 				pizzas[i]=null;
-				sc.close();
+			
 				break;
 				
 			
