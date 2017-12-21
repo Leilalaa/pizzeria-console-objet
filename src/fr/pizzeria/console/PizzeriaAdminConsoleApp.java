@@ -7,7 +7,8 @@ package fr.pizzeria.console;
 import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
-import fr.pizzeria.dao.PizzaException;
+import fr.pizzeria.dao.SavePizzaException;
+import fr.pizzeria.dao.StockageException;
 import fr.pizzeria.ihm.*;
 
 
@@ -30,7 +31,7 @@ public class PizzeriaAdminConsoleApp {
 //                                       MAIN
 //***************************************************************************************************************	
 	
-	public static void main(String[] args) throws PizzaException {
+	public static void main(String[] args) {
 
 		// Initialisation des variables scanner
 		int choixMenu = 0;
@@ -75,8 +76,15 @@ public class PizzeriaAdminConsoleApp {
 					break;
 	
 				case 2:
+				
+					try {
+						ajouter.execute();
+					} catch (SavePizzaException e) {
+						
+					System.out.println(e.getMessage());
+					}
 					
-					ajouter.execute();
+				
 					
 					break;
 	

@@ -1,7 +1,7 @@
 package fr.pizzeria.ihm;
 
 import java.util.Scanner;
-
+import fr.pizzeria.dao.DeletePizzaException;
 import fr.pizzeria.dao.PizzaDaoImpl;
 
 
@@ -22,7 +22,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		return "4. Supprimer une pizza";
 	}
 
-	public void execute(){
+	public void execute() { //throws DeletePizzaException
 		
 		System.out.println("Suppression d\'une pizza");
 		
@@ -30,7 +30,8 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		System.out.println("Veuillez choisir la pizza a modifier\n");
 		System.out.println("99 pour abandonner\n");
 		choixCode = sc.next();
-		
+//		
+//		if(choixCode)
 		
 		
 		

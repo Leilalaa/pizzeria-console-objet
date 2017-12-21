@@ -27,7 +27,7 @@ public class PizzaDaoImpl {
 	}
 	
 	// Ajouter une pizza
-	public boolean saveNewPizza(Pizza pizza) throws PizzaException {
+	public boolean saveNewPizza(Pizza pizza) throws SavePizzaException {
 		
 		boolean pizzaSauvegarde = false; // On verifie qu'on est bien rentré ds boucle sinon on génere exception
 		
@@ -40,7 +40,7 @@ public class PizzaDaoImpl {
 		}
 		
 		if (!pizzaSauvegarde){
-			throw new PizzaException("Le tableau est plein");
+			throw new SavePizzaException("Le tableau est plein");
 		}
 		
 		return false;

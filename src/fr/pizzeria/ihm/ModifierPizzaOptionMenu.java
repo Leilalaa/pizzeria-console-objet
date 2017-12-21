@@ -2,6 +2,8 @@ package fr.pizzeria.ihm;
 import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
+import fr.pizzeria.dao.SavePizzaException;
+import fr.pizzeria.dao.UpdatePizzaException;
 import fr.pizzeria.model.Pizza;
 
 
@@ -20,7 +22,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 			return "3. Mettre à jour une pizza";
 	}
 
-	public void execute(){
+	public void execute() { //throws UpdatePizzaException
 		
 		System.out.println("Mise à jour d\'une pizza");
 		
@@ -32,6 +34,11 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 		
 		System.out.println("Veuillez saisir le code\n");
 		String newCode  = sc.next();
+		
+//		if(){
+//			throw new UpdatePizzaException("Ce code de pizza n'existe pas !");
+//		}
+//		
 		System.out.println("Veuillez saisir le nom (sans espace)\n");
 		String newNom = sc.next();
 		System.out.println("Veuillez saisir le prix\n");
