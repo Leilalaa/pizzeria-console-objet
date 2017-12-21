@@ -2,6 +2,7 @@ package fr.pizzeria.ihm;
 import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
+import fr.pizzeria.dao.PizzaException;
 import fr.pizzeria.model.Pizza;
 
 
@@ -34,8 +35,14 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		choixNom = sc.next();
 		System.out.println("Veuillez saisir le prix\n");
 		choixPrix = sc.nextDouble();
+		
 		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix);
-		dao.saveNewPizza(pizza);
+		
+		try {
+			dao.saveNewPizza(pizza);
+		}
+		catch (PizzaException e){		
+		}
 	}
 
 }

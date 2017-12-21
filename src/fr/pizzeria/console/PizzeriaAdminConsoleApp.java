@@ -7,8 +7,9 @@ package fr.pizzeria.console;
 import java.util.Scanner;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
+import fr.pizzeria.dao.PizzaException;
 import fr.pizzeria.ihm.*;
-import fr.pizzeria.model.Pizza;
+
 
 
 
@@ -18,7 +19,7 @@ public class PizzeriaAdminConsoleApp {
 	
 	// Attributs
 	
-	static Pizza[] pizzas = new Pizza[100];
+	static PizzaDaoImpl pizzas = new PizzaDaoImpl();
 	
 	
 	// Création du tableau de pizzas
@@ -29,18 +30,8 @@ public class PizzeriaAdminConsoleApp {
 //                                       MAIN
 //***************************************************************************************************************	
 	
-	public static void main(String[] args) {
-		
-		// Remplissage du tableau de pizzas
-		pizzas[0] = new Pizza(0,"PEP","Peperoni",12.5);
-		pizzas[1] = new Pizza(1,"MAR","Margherita",14.0);
-		pizzas[2] = new Pizza(2,"REIN","La Reine",11.5);
-		pizzas[3] = new Pizza(3,"FRO","La 4 fromages",12.0);
-		pizzas[4] = new Pizza(4,"CAN","La cannibale",12.5);
-		pizzas[5] = new Pizza(5,"SAV","La savoyarde",13.0);
-		pizzas[6] = new Pizza(6,"ORI","L\'orientale",13.5);
-		pizzas[7] = new Pizza(7,"IND","L\'indienne",14.5);
-		
+	public static void main(String[] args) throws PizzaException {
+
 		// Initialisation des variables scanner
 		int choixMenu = 0;
 
@@ -72,40 +63,46 @@ public class PizzeriaAdminConsoleApp {
 			choixMenu = sc.nextInt();
 			
 			
-
-			switch (choixMenu)
-			{
-
-			case 1:
+			try{
+	
+				switch (choixMenu)
+				{
+	
+				case 1:
+					
+					lister.execute();
+					
+					break;
+	
+				case 2:
+					
+					ajouter.execute();
+					
+					break;
+	
+				case 3:
+					
+					modifier.execute();
+					
+					break;
+	
+				case 4:
+					
+					supprimer.execute();
+					
+					break;
+				}
 				
-				lister.execute();
-				
-				break;
-
-			case 2:
-				
-				ajouter.execute();
-				
-				break;
-
-			case 3:
-				
-				modifier.execute();
-				
-				break;
-
-			case 4:
-				
-				supprimer.execute();
-				
-				break;
+			
+				if (choixMenu == 99){
+					
+					System.out.println("Au revoir :(");
+				}
+			
+			}catch (NumberFormatException e){
+				 
+				System.out.println(e.getMessage());
 			}
-			
-		
-		if (choixMenu == 99){
-			
-			System.out.println("Au revoir :(");
-		}
 		
 			
 		}

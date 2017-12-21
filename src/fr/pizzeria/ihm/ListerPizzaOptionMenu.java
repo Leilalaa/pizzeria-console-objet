@@ -1,14 +1,15 @@
 package fr.pizzeria.ihm;
 import java.util.Scanner;
-import fr.pizzeria.model.Pizza;
+
+import fr.pizzeria.dao.PizzaDaoImpl;
 
 
 
 public class ListerPizzaOptionMenu extends OptionMenu {
 
 	
-	public ListerPizzaOptionMenu(Scanner sc, Pizza[] pizzas) {
-		super(sc, pizzas);
+	public ListerPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
+		super(sc, dao);
 
 	}
 	
@@ -16,13 +17,22 @@ public class ListerPizzaOptionMenu extends OptionMenu {
 		
 		return "1. Afficher la liste des pizzas";
 }
-
-	public void execute() {
+	
+	public void execute(){
+	
 		System.out.println("Liste des pizzas");
 		for (int i = 0; pizzas[i]!=null; i++) {
-			System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + " €)");
-		 } 
+		dao.findAllPizzas(pizzas[i]);
+		}
+		
 	}
-	
+
+//	public void execute() {
+//		System.out.println("Liste des pizzas");
+//		for (int i = 0; pizzas[i]!=null; i++) {
+//			System.out.println( pizzas[i].code + " -> " + pizzas[i].nom + "(" + pizzas[i].prix + " €)");
+//		 } 
+//	}
+//	
 
 }
