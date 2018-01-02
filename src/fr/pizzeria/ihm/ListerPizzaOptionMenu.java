@@ -2,8 +2,7 @@ package fr.pizzeria.ihm;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.model.Pizza;
@@ -23,7 +22,7 @@ public class ListerPizzaOptionMenu extends OptionMenu {
 		return "1. Afficher la liste des pizzas";
 }
 	
-	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+
 	
 	public void execute(){
 		

@@ -2,8 +2,7 @@ package fr.pizzeria.ihm;
 
 import java.util.Scanner;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
 import fr.pizzeria.dao.DeletePizzaException;
 import fr.pizzeria.dao.PizzaDaoImpl;
@@ -26,7 +25,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		return "4. Supprimer une pizza";
 	}
 
-	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+
 	public void execute() { //throws DeletePizzaException
 		
 		LOG.info("Suppression d\'une pizza");

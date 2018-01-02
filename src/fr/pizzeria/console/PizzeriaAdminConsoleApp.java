@@ -1,6 +1,6 @@
 /**
  * @author Leila
- *
+ * Application de gestion des stocks d'une pizzeria
  */
 
 package fr.pizzeria.console;
@@ -34,7 +34,11 @@ public class PizzeriaAdminConsoleApp {
 //***************************************************************************************************************
 //                                       MAIN
 //***************************************************************************************************************	
-	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+	/**
+	 LOG : Logger 
+	 */
+	public static final Logger LOG = LoggerFactory.getLogger("dev.console");
+	
 	public static void main(String[] args) {
 
 		// Initialisation des variables scanner

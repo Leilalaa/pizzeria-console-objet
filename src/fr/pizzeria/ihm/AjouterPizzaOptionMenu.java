@@ -1,9 +1,7 @@
 package fr.pizzeria.ihm;
 import java.util.Scanner;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
@@ -30,7 +28,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		return "2. Ajouter une nouvelle pizza";
 	}
 	
-	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+
 	public void execute() throws SavePizzaException{
 		LOG.info("Ajout d\'une nouvelle pizza \n");
 		
