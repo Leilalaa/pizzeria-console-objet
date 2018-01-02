@@ -14,15 +14,17 @@ public class Pizza {
 		public String code;
 		public String nom;
 		public double prix;
+		public CategoriePizza categorie;
 	
 	// Constructeurs
 		
-		public Pizza(String code, String nom, double prix) {
+		public Pizza(String code, String nom, double prix, CategoriePizza categorie) {
 			super();
 //			this.crId= crId;
 			this.code = code;
 			this.nom = nom;
 			this.prix = prix;
+			this.categorie=categorie;
 		}
 	
 	// Accesseurs 
@@ -46,6 +48,7 @@ public class Pizza {
 		public void setPrix(double prix) {
 			this.prix = prix;
 		}
+
 		
 		private static final Logger LOG = LoggerFactory.getLogger("dev.console");
 		
@@ -53,7 +56,7 @@ public class Pizza {
 		
 		public void affiche(){
 			
-			LOG.info( code + " -> " + nom + "(" + prix + " €)");
+			LOG.info( code + " -> " + nom + "(" + prix + " €) " + categorie);
 		}
 
 

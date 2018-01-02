@@ -6,6 +6,7 @@ import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
 import fr.pizzeria.dao.UpdatePizzaException;
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
 
@@ -46,9 +47,11 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 		String newNom = sc.next();
 		LOG.info("Veuillez saisir le prix\n");
 		double newPrix = sc.nextDouble();
+		LOG.info("Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)\n");
+		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next());
 
 		
-		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix));
+		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix, choixCat));
 //		
 //		if(choixCode!="99"){
 //			for(int i = 0; i<pizzas.length; i++){

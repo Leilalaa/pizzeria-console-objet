@@ -2,24 +2,25 @@ package fr.pizzeria.dao;
 
 import java.util.ArrayList;
 
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
 
 
-public class PizzaDaoImpl {
+public class PizzaDaoImpl implements IPizzaDao {
 	
-	public ArrayList<Pizza> listePizza = new ArrayList<>();
+	public ArrayList<Pizza> listePizza = new ArrayList<Pizza>();
 	
 	public PizzaDaoImpl(){
 		
-		listePizza.add(new Pizza("PEP","Peperoni",12.5));
-		listePizza.add(new Pizza("MAR","Margherita",14.0));
-		listePizza.add(new Pizza("REIN","La Reine",11.5));
-		listePizza.add(new Pizza("FRO","La 4 fromages",12.0));
-		listePizza.add(new Pizza("CAN","La cannibale",12.5));
-		listePizza.add(new Pizza("SAV","La savoyarde",13.0));
-		listePizza.add(new Pizza("ORI","L\'orientale",13.5));
-		listePizza.add(new Pizza("IND","L\'indienne",14.5));
+		listePizza.add(new Pizza("PEP","Peperoni",12.5, CategoriePizza.VIANDE));
+		listePizza.add(new Pizza("MAR","Margherita",14.0, CategoriePizza.SANS_VIANDE));
+		listePizza.add(new Pizza("REIN","La Reine",11.5, CategoriePizza.VIANDE));
+		listePizza.add(new Pizza("FRO","La 4 fromages",12.0, CategoriePizza.SANS_VIANDE));
+		listePizza.add(new Pizza("CAN","La cannibale",12.5, CategoriePizza.VIANDE));
+		listePizza.add(new Pizza("SAV","La savoyarde",13.0, CategoriePizza.VIANDE));
+		listePizza.add(new Pizza("ORI","L\'orientale",13.5, CategoriePizza.VIANDE));
+		listePizza.add(new Pizza("IND","L\'indienne",14.5, CategoriePizza.VIANDE));
 		
 		
 	}
@@ -80,4 +81,6 @@ public class PizzaDaoImpl {
 		return false;
 
 	}
+
+	
 }

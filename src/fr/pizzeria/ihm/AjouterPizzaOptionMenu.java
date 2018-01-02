@@ -5,6 +5,7 @@ import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
+import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
 
@@ -17,6 +18,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 	String choixCode;
 	String choixNom;
 	double choixPrix = 0;
+	CategoriePizza choixCat;
 	
 	public AjouterPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
 		super(sc, dao);
@@ -41,8 +43,10 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		if(choixPrix <=0){
 			throw new SavePizzaException("Le prix ne peut pas être négatif !");
 		}
+		LOG.info("Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)\n");
+		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next());
 		
-		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix);
+		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix, choixCat);
 		
 		
 		dao.saveNewPizza(pizza);
