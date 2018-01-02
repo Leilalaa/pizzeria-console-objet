@@ -1,6 +1,10 @@
 package fr.pizzeria.ihm;
 
 import java.util.Scanner;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import fr.pizzeria.dao.DeletePizzaException;
 import fr.pizzeria.dao.PizzaDaoImpl;
 
@@ -22,13 +26,14 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		return "4. Supprimer une pizza";
 	}
 
+	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
 	public void execute() { //throws DeletePizzaException
 		
-		System.out.println("Suppression d\'une pizza");
+		LOG.info("Suppression d\'une pizza");
 		
 		
-		System.out.println("Veuillez choisir la pizza a modifier\n");
-		System.out.println("99 pour abandonner\n");
+		LOG.info("Veuillez choisir la pizza a modifier\n");
+		LOG.info("99 pour abandonner\n");
 		choixCode = sc.next();
 //		
 //		if(choixCode)

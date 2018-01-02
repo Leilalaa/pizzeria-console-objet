@@ -1,4 +1,10 @@
+
 package fr.pizzeria.model;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 
 public class Pizza {
 	
@@ -41,11 +47,13 @@ public class Pizza {
 			this.prix = prix;
 		}
 		
+		private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+		
 	// Fonction permettant d'afficher les pizzas
 		
 		public void affiche(){
 			
-			System.out.println( code + " -> " + nom + "(" + prix + " €)");
+			LOG.info( code + " -> " + nom + "(" + prix + " €)");
 		}
 
 

@@ -6,6 +6,9 @@
 package fr.pizzeria.console;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
 import fr.pizzeria.dao.StockageException;
@@ -31,7 +34,7 @@ public class PizzeriaAdminConsoleApp {
 //***************************************************************************************************************
 //                                       MAIN
 //***************************************************************************************************************	
-	
+	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
 	public static void main(String[] args) {
 
 		// Initialisation des variables scanner
@@ -53,14 +56,14 @@ public class PizzeriaAdminConsoleApp {
 		
 		while (choixMenu != 99)
 		{
-			System.out.println("***** Pizzeria Administration ***** ");
-			System.out.println(lister.getLibelle()); 
-			System.out.println(ajouter.getLibelle());
-			System.out.println(modifier.getLibelle());
-			System.out.println(supprimer.getLibelle());
-			System.out.println("99. Sortir ");
+			LOG.info("***** Pizzeria Administration ***** ");
+			LOG.info(lister.getLibelle()); 
+			LOG.info(ajouter.getLibelle());
+			LOG.info(modifier.getLibelle());
+			LOG.info(supprimer.getLibelle());
+			LOG.info("99. Sortir ");
 
-			System.out.println("Votre choix : ");
+			LOG.info("Votre choix : ");
 			
 			choixMenu = sc.nextInt();
 			
@@ -82,7 +85,7 @@ public class PizzeriaAdminConsoleApp {
 						ajouter.execute();
 					} catch (SavePizzaException e) {
 						
-					System.out.println(e.getMessage());
+						LOG.info(e.getMessage());
 					}
 					
 				
@@ -105,12 +108,12 @@ public class PizzeriaAdminConsoleApp {
 			
 				if (choixMenu == 99){
 					
-					System.out.println("Au revoir :(");
+					LOG.info("Au revoir :(");
 				}
 			
 			}catch (NumberFormatException e){
 				 
-				System.out.println(e.getMessage());
+				LOG.info(e.getMessage());
 			}
 		
 			

@@ -2,6 +2,9 @@ package fr.pizzeria.ihm;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.model.Pizza;
 
@@ -20,10 +23,12 @@ public class ListerPizzaOptionMenu extends OptionMenu {
 		return "1. Afficher la liste des pizzas";
 }
 	
+	private static final Logger LOG = LoggerFactory.getLogger("dev.console");
+	
 	public void execute(){
 		
 		ArrayList<Pizza> pizzas = dao.findAllPizzas();
-		System.out.println("Liste des pizzas");
+		LOG.info("Liste des pizzas");
 		for (Pizza pizza : pizzas){
 			pizza.affiche();
 		}
