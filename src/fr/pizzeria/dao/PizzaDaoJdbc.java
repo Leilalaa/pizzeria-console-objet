@@ -21,16 +21,16 @@ public class PizzaDaoJdbc implements IPizzaDao {
 	ResourceBundle props = ResourceBundle.getBundle("jdbc");
 	//String driverName = props.getString("jdbc.driverClassName");
 
-	String url = props.getString("jdbc.url");
-	String utilisateur = props.getString("jdbc.username");
-	String motDePasse = props.getString("jdbc.password");
+	String url = props.getString("db.url");
+	String utilisateur = props.getString("db.username");
+	String motDePasse = props.getString("db.password");
 	Connection connection = null;
 
 	public PizzaDaoJdbc() {
 
 		try {
 
-			Class.forName(" org.mariadb.jdbc.Driver");
+			Class.forName("org.mariadb.jdbc.Driver");
 			connection = DriverManager.getConnection(url, utilisateur, motDePasse);
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -46,18 +46,19 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		try {
 		Statement statement = connection.createStatement();
 
-		ResultSet resultats = statement.executeQuery("SELECT * FROM PIZZA");
+		ResultSet resultats = statement.executeQuery("SELECT * FROM pizza");
 
 		while (resultats.next()) {
 
-			String code = resultats.getString("ID");
-			String nom = resultats.getString("PIZZA_NAME");
-			Double prix = resultats.getDouble("PRICE");
-			String categorieStr = resultats.getString("CATEGORY");
+			String code = resultats.getString("id");
+			String nom = resultats.getString("pizza_name");
+			Double prix = resultats.getDouble("price");
+			String categorieStr = resultats.getString("category").toUpperCase();
 			CategoriePizza categorie = CategoriePizza.valueOf(categorieStr);
 			
 			Pizza p = new Pizza(code, nom, prix, categorie);
 			pizzas.add(p);
+			
 			
 		}
 		statement.close();
@@ -81,7 +82,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		updatePizzaSt.setString(1,pizza.getCode()); 
 		updatePizzaSt.setString(2,pizza.getNom()); 
 		updatePizzaSt.setDouble(3,pizza.getPrix());
-		updatePizzaSt.setString(2,pizza.getCat().toString());
+		updatePizzaSt.setString(4,pizza.getCat().toString());
 		updatePizzaSt.setString(5,choixCode);
 		updatePizzaSt.executeUpdate();
 		updatePizzaSt.close();
@@ -94,14 +95,15 @@ public class PizzaDaoJdbc implements IPizzaDao {
 
 	public boolean saveNewPizza(Pizza pizza) throws SavePizzaException {
 
+		PreparedStatement savePizzaSt;
 		try {
 			
-			PreparedStatement savePizzaSt = connection.prepareStatement("INSERT INTO PIZZA VALUES(?,?,?,?)"); 
+			savePizzaSt = connection.prepareStatement("INSERT INTO PIZZA VALUES(?,?,?,?)"); 
 			
 			savePizzaSt.setString(1,pizza.getCode()); 
 			savePizzaSt.setString(2,pizza.getNom()); 
 			savePizzaSt.setDouble(3,pizza.getPrix());
-			savePizzaSt.setString(2,pizza.getCat().toString());
+			savePizzaSt.setString(4,pizza.getCat().toString());
 			savePizzaSt.executeUpdate();
 			savePizzaSt.close();
 			
@@ -114,7 +116,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 	public boolean deletePizza(String choixCode) {
 		
 		try {
-			PreparedStatement deletePizzaSt = connection.prepareStatement("DELETE FROM PIZZA SET WHERE ID=?"); 
+			PreparedStatement deletePizzaSt = connection.prepareStatement("DELETE FROM PIZZA WHERE ID=?"); 
 			
 			deletePizzaSt.setString(1,choixCode);  
 			deletePizzaSt.executeUpdate();

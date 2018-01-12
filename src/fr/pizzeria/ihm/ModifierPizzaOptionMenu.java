@@ -49,7 +49,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 		LOG.info("Veuillez saisir le prix\n");
 		double newPrix = sc.nextDouble();
 		LOG.info("Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)\n");
-		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next());
+		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next().toUpperCase());
 
 		
 		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix, choixCat));

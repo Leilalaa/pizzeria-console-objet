@@ -45,7 +45,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 			throw new SavePizzaException("Le prix ne peut pas être négatif !");
 		}
 		LOG.info("Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)\n");
-		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next());
+		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next().toUpperCase());
 		
 		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix, choixCat);
 		

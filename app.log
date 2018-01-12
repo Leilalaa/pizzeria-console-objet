@@ -245,3 +245,782 @@
 				99. Sortir 
 13:42:31.951 [main] INFO  dev.console -
 				Votre choix : 
+13:38:37.861 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+13:38:37.863 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+13:38:37.863 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+13:38:37.863 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+13:38:37.863 [main] INFO  dev.console -
+				4. Supprimer une pizza
+13:38:37.864 [main] INFO  dev.console -
+				99. Sortir 
+13:38:37.864 [main] INFO  dev.console -
+				Votre choix : 
+14:04:25.023 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:04:25.023 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:04:25.023 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:04:25.023 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:04:25.023 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:04:25.023 [main] INFO  dev.console -
+				99. Sortir 
+14:04:25.023 [main] INFO  dev.console -
+				Votre choix : 
+14:06:13.845 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:06:13.861 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:06:13.861 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:06:13.861 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:06:13.861 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:06:13.861 [main] INFO  dev.console -
+				99. Sortir 
+14:06:13.861 [main] INFO  dev.console -
+				Votre choix : 
+14:07:17.713 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:07:17.729 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:07:17.729 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:07:17.729 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:07:17.729 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:07:17.729 [main] INFO  dev.console -
+				99. Sortir 
+14:07:17.729 [main] INFO  dev.console -
+				Votre choix : 
+14:13:00.402 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:13:00.413 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:13:00.413 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:13:00.413 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:13:00.413 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:13:00.413 [main] INFO  dev.console -
+				99. Sortir 
+14:13:00.413 [main] INFO  dev.console -
+				Votre choix : 
+14:14:20.300 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:14:20.316 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:14:20.316 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:14:20.316 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:14:20.316 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:14:20.316 [main] INFO  dev.console -
+				99. Sortir 
+14:14:20.316 [main] INFO  dev.console -
+				Votre choix : 
+14:15:56.662 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:15:56.662 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:15:56.662 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:15:56.662 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:15:56.662 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:15:56.662 [main] INFO  dev.console -
+				99. Sortir 
+14:15:56.662 [main] INFO  dev.console -
+				Votre choix : 
+14:16:24.615 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:16:24.618 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:16:24.618 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:16:24.618 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:16:24.618 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:16:24.618 [main] INFO  dev.console -
+				99. Sortir 
+14:16:24.618 [main] INFO  dev.console -
+				Votre choix : 
+14:20:12.389 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:20:12.389 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:20:12.389 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:20:12.389 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:20:12.389 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:20:12.389 [main] INFO  dev.console -
+				99. Sortir 
+14:20:12.389 [main] INFO  dev.console -
+				Votre choix : 
+14:20:13.968 [main] INFO  dev.console -
+				Liste des pizzas
+14:20:13.972 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:20:13.972 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:20:13.972 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:20:13.972 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:20:13.972 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:20:13.972 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:20:13.972 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:20:13.972 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:20:13.972 [main] INFO  dev.console -
+				99. Sortir 
+14:20:13.973 [main] INFO  dev.console -
+				Votre choix : 
+14:20:19.709 [main] INFO  dev.console -
+				Ajout d'une nouvelle pizza 
+
+14:20:19.721 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:20:22.464 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:20:24.752 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:20:27.998 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:20:31.772 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:20:31.772 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:20:31.772 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:20:31.772 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:20:31.772 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:20:31.772 [main] INFO  dev.console -
+				99. Sortir 
+14:20:31.772 [main] INFO  dev.console -
+				Votre choix : 
+14:25:21.827 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:25:21.827 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:25:21.827 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:25:21.827 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:25:21.827 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:25:21.827 [main] INFO  dev.console -
+				99. Sortir 
+14:25:21.827 [main] INFO  dev.console -
+				Votre choix : 
+14:25:25.336 [main] INFO  dev.console -
+				Ajout d'une nouvelle pizza 
+
+14:25:25.351 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:25:27.191 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:25:29.137 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:25:30.329 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:25:32.707 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:25:32.707 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:25:32.707 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:25:32.707 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:25:32.707 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:25:32.707 [main] INFO  dev.console -
+				99. Sortir 
+14:25:32.707 [main] INFO  dev.console -
+				Votre choix : 
+14:29:00.754 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:00.754 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:00.754 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:00.754 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:00.754 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:00.754 [main] INFO  dev.console -
+				99. Sortir 
+14:29:00.754 [main] INFO  dev.console -
+				Votre choix : 
+14:29:04.063 [main] INFO  dev.console -
+				Liste des pizzas
+14:29:04.079 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:29:04.079 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:29:04.079 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:29:04.079 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:04.079 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:04.079 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:04.079 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:04.079 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:04.079 [main] INFO  dev.console -
+				99. Sortir 
+14:29:04.079 [main] INFO  dev.console -
+				Votre choix : 
+14:29:06.693 [main] INFO  dev.console -
+				Ajout d'une nouvelle pizza 
+
+14:29:06.702 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:29:09.746 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:29:11.509 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:29:13.308 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:29:15.809 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:15.822 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:15.822 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:15.822 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:15.822 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:15.822 [main] INFO  dev.console -
+				99. Sortir 
+14:29:15.822 [main] INFO  dev.console -
+				Votre choix : 
+14:29:18.073 [main] INFO  dev.console -
+				Liste des pizzas
+14:29:18.078 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:29:18.078 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:29:18.078 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				KEB -> Kebab(13.0 €) Viande
+14:29:18.078 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:18.078 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:18.078 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:18.078 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:18.078 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:18.079 [main] INFO  dev.console -
+				99. Sortir 
+14:29:18.079 [main] INFO  dev.console -
+				Votre choix : 
+14:29:24.378 [main] INFO  dev.console -
+				Au revoir :(
+14:29:52.205 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:52.205 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:52.205 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:52.205 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:52.205 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:52.205 [main] INFO  dev.console -
+				99. Sortir 
+14:29:52.205 [main] INFO  dev.console -
+				Votre choix : 
+14:29:54.298 [main] INFO  dev.console -
+				Liste des pizzas
+14:29:54.312 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:29:54.312 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:29:54.312 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:29:54.313 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:29:54.313 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:29:54.313 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:29:54.313 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:29:54.313 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:29:54.313 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:29:54.313 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:29:54.313 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:29:54.313 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:29:54.313 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:29:54.313 [main] INFO  dev.console -
+				99. Sortir 
+14:29:54.313 [main] INFO  dev.console -
+				Votre choix : 
+14:29:56.143 [main] INFO  dev.console -
+				Ajout d'une nouvelle pizza 
+
+14:29:56.158 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:29:58.049 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:29:59.742 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:30:01.473 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:30:03.817 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:30:03.817 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:30:03.817 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:30:03.817 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:30:03.817 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:30:03.817 [main] INFO  dev.console -
+				99. Sortir 
+14:30:03.817 [main] INFO  dev.console -
+				Votre choix : 
+14:30:10.479 [main] INFO  dev.console -
+				Liste des pizzas
+14:30:10.494 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:30:10.494 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:30:10.494 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:30:10.494 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:30:10.494 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:30:10.494 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:30:10.495 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:30:10.495 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:30:10.495 [main] INFO  dev.console -
+				99. Sortir 
+14:30:10.495 [main] INFO  dev.console -
+				Votre choix : 
+14:31:59.670 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:31:59.670 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:31:59.670 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:31:59.670 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:31:59.670 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:31:59.670 [main] INFO  dev.console -
+				99. Sortir 
+14:31:59.670 [main] INFO  dev.console -
+				Votre choix : 
+14:32:03.378 [main] INFO  dev.console -
+				Liste des pizzas
+14:32:03.392 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:32:03.392 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:32:03.392 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:32:03.392 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:32:03.392 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:32:03.392 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:32:03.392 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:32:03.393 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:32:03.393 [main] INFO  dev.console -
+				99. Sortir 
+14:32:03.393 [main] INFO  dev.console -
+				Votre choix : 
+14:32:04.592 [main] INFO  dev.console -
+				Ajout d'une nouvelle pizza 
+
+14:32:04.605 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:32:05.731 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:32:07.454 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:32:09.041 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:32:11.322 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:32:11.333 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:32:11.333 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:32:11.333 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:32:11.333 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:32:11.333 [main] INFO  dev.console -
+				99. Sortir 
+14:32:11.333 [main] INFO  dev.console -
+				Votre choix : 
+14:32:12.662 [main] INFO  dev.console -
+				Liste des pizzas
+14:32:12.670 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:32:12.670 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				KEB -> Kebab(13.0 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:32:12.670 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:32:12.670 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:32:12.670 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:32:12.670 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:32:12.670 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:32:12.670 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:32:12.670 [main] INFO  dev.console -
+				99. Sortir 
+14:32:12.670 [main] INFO  dev.console -
+				Votre choix : 
+14:32:39.494 [main] INFO  dev.console -
+				Mise à jour d'une pizza
+14:32:39.510 [main] INFO  dev.console -
+				Veuillez choisir la pizza a modifier
+
+14:32:39.510 [main] INFO  dev.console -
+				99 pour abandonner
+
+14:32:41.339 [main] INFO  dev.console -
+				Veuillez saisir le code
+
+14:33:05.030 [main] INFO  dev.console -
+				Veuillez saisir le nom (sans espace)
+
+14:33:07.345 [main] INFO  dev.console -
+				Veuillez saisir le prix
+
+14:33:09.707 [main] INFO  dev.console -
+				Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)
+
+14:33:14.590 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:33:14.590 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:33:14.599 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:33:14.599 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:33:14.599 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:33:14.599 [main] INFO  dev.console -
+				99. Sortir 
+14:33:14.599 [main] INFO  dev.console -
+				Votre choix : 
+14:40:30.471 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:40:30.487 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:40:30.487 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:40:30.487 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:40:30.487 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:40:30.487 [main] INFO  dev.console -
+				99. Sortir 
+14:40:30.487 [main] INFO  dev.console -
+				Votre choix : 
+14:42:43.534 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:42:43.534 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:42:43.534 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:42:43.534 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:42:43.534 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:42:43.534 [main] INFO  dev.console -
+				99. Sortir 
+14:42:43.534 [main] INFO  dev.console -
+				Votre choix : 
+14:42:45.045 [main] INFO  dev.console -
+				Liste des pizzas
+14:42:45.059 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:42:45.060 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:42:45.060 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				ROC -> Rocher(13.0 €) Sans Viande
+14:42:45.060 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:42:45.060 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:42:45.060 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:42:45.060 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:42:45.060 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:42:45.060 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:42:45.060 [main] INFO  dev.console -
+				99. Sortir 
+14:42:45.060 [main] INFO  dev.console -
+				Votre choix : 
+14:42:56.262 [main] INFO  dev.console -
+				Suppression d'une pizza
+14:42:56.265 [main] INFO  dev.console -
+				Veuillez choisir la pizza a modifier
+
+14:42:56.265 [main] INFO  dev.console -
+				99 pour abandonner
+
+14:43:01.029 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:43:01.029 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:43:01.029 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:43:01.029 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:43:01.029 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:43:01.029 [main] INFO  dev.console -
+				99. Sortir 
+14:43:01.029 [main] INFO  dev.console -
+				Votre choix : 
+14:43:50.864 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:43:50.864 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:43:50.864 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:43:50.864 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:43:50.864 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:43:50.864 [main] INFO  dev.console -
+				99. Sortir 
+14:43:50.864 [main] INFO  dev.console -
+				Votre choix : 
+14:43:52.509 [main] INFO  dev.console -
+				Liste des pizzas
+14:43:52.515 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:43:52.516 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:43:52.516 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				ROC -> Rocher(13.0 €) Sans Viande
+14:43:52.516 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:43:52.516 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:43:52.516 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:43:52.516 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:43:52.516 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:43:52.516 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:43:52.516 [main] INFO  dev.console -
+				99. Sortir 
+14:43:52.516 [main] INFO  dev.console -
+				Votre choix : 
+14:43:56.007 [main] INFO  dev.console -
+				Suppression d'une pizza
+14:43:56.009 [main] INFO  dev.console -
+				Veuillez entrer le code de la pizza à supprimer
+
+14:43:56.009 [main] INFO  dev.console -
+				99 pour abandonner
+
+14:43:59.247 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:43:59.247 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:43:59.262 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:43:59.262 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:43:59.262 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:43:59.262 [main] INFO  dev.console -
+				99. Sortir 
+14:43:59.262 [main] INFO  dev.console -
+				Votre choix : 
+14:44:00.567 [main] INFO  dev.console -
+				Liste des pizzas
+14:44:00.577 [main] INFO  dev.console -
+				CAN -> La cannibale(12.5 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				FRO -> La 4 fromages(12.0 €) Sans Viande
+14:44:00.577 [main] INFO  dev.console -
+				IND -> L'indienne(14.5 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				MAR -> Margherita(14.0 €) Sans Viande
+14:44:00.577 [main] INFO  dev.console -
+				ORI -> L'orientale(13.5 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				PEP -> Peperoni(12.5 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				REIN -> La Reine(11.5 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				SAV -> La savoyarde(13.0 €) Viande
+14:44:00.577 [main] INFO  dev.console -
+				***** Pizzeria Administration ***** 
+14:44:00.577 [main] INFO  dev.console -
+				1. Afficher la liste des pizzas
+14:44:00.577 [main] INFO  dev.console -
+				2. Ajouter une nouvelle pizza
+14:44:00.577 [main] INFO  dev.console -
+				3. Mettre à jour une pizza
+14:44:00.577 [main] INFO  dev.console -
+				4. Supprimer une pizza
+14:44:00.577 [main] INFO  dev.console -
+				99. Sortir 
+14:44:00.578 [main] INFO  dev.console -
+				Votre choix : 
+14:44:06.797 [main] INFO  dev.console -
+				Au revoir :(

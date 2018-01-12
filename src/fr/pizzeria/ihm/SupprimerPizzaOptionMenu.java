@@ -32,7 +32,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 		LOG.info("Suppression d\'une pizza");
 		
 		
-		LOG.info("Veuillez choisir la pizza a modifier\n");
+		LOG.info("Veuillez entrer le code de la pizza à supprimer\n");
 		LOG.info("99 pour abandonner\n");
 		choixCode = sc.next();
 //		
