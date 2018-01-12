@@ -5,9 +5,14 @@ import java.util.ArrayList;
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 
 public class PizzaDaoImpl implements IPizzaDao {
+	
+
 	
 	public ArrayList<Pizza> listePizza = new ArrayList<Pizza>();
 	

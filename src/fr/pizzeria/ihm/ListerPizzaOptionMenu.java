@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.model.Pizza;
 
@@ -12,8 +13,8 @@ import fr.pizzeria.model.Pizza;
 public class ListerPizzaOptionMenu extends OptionMenu {
 
 	
-	public ListerPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
-		super(sc, dao);
+	public ListerPizzaOptionMenu(Scanner sc, IPizzaDao pizzas) {
+		super(sc, pizzas);
 
 	}
 	

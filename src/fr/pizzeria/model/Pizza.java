@@ -48,6 +48,12 @@ public class Pizza {
 		public void setPrix(double prix) {
 			this.prix = prix;
 		}
+		public CategoriePizza getCat(){
+			return categorie;
+		}
+		public void setCat(CategoriePizza categorie) {
+			this.categorie=categorie;
+		}
 
 		
 		private static final Logger LOG = LoggerFactory.getLogger("dev.console");

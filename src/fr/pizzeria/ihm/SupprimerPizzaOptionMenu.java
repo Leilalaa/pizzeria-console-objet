@@ -5,6 +5,7 @@ import java.util.Scanner;
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
 import fr.pizzeria.dao.DeletePizzaException;
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.dao.PizzaDaoImpl;
 
 
@@ -15,8 +16,8 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 	
 	String choixCode;
 	
-	public SupprimerPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
-		super(sc, dao);
+	public SupprimerPizzaOptionMenu(Scanner sc, IPizzaDao pizzas) {
+		super(sc, pizzas);
 
 	}
 	

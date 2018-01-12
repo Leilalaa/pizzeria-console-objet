@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
 import fr.pizzeria.dao.UpdatePizzaException;
@@ -15,8 +16,8 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 	
 	
 	
-	public ModifierPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
-		super(sc, dao);
+	public ModifierPizzaOptionMenu(Scanner sc, IPizzaDao pizzas) {
+		super(sc, pizzas);
 
 	}
 

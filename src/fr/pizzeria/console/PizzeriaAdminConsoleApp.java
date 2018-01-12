@@ -9,7 +9,9 @@ import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.dao.PizzaDaoImpl;
+import fr.pizzeria.dao.PizzaDaoJdbc;
 import fr.pizzeria.dao.SavePizzaException;
 import fr.pizzeria.dao.StockageException;
 import fr.pizzeria.ihm.*;
@@ -23,7 +25,7 @@ public class PizzeriaAdminConsoleApp {
 	
 	// Attributs
 	
-	static PizzaDaoImpl pizzas = new PizzaDaoImpl();
+	static IPizzaDao pizzas = new PizzaDaoJdbc();
 	
 	
 	

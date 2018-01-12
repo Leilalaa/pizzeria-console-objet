@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
+import fr.pizzeria.dao.IPizzaDao;
 import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.SavePizzaException;
 import fr.pizzeria.model.CategoriePizza;
@@ -20,8 +21,8 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 	double choixPrix = 0;
 	CategoriePizza choixCat;
 	
-	public AjouterPizzaOptionMenu(Scanner sc, PizzaDaoImpl dao) {
-		super(sc, dao);
+	public AjouterPizzaOptionMenu(Scanner sc, IPizzaDao pizzas) {
+		super(sc, pizzas);
 
 	}
 	
