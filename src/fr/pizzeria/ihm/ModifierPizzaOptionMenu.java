@@ -28,7 +28,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 
 	
 	public void execute()  { //throws UpdatePizzaException
-		
+		try{
 		LOG.info("Mise à jour d\'une pizza");
 		
 		dao.findAllPizzas();
@@ -53,6 +53,10 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 
 		
 		dao.updatePizza(choixCode, new Pizza(newCode, newNom, newPrix, choixCat));
+	}catch(IllegalArgumentException e) {
+		LOG.info("Votre catégorie ne peut être que : VIANDE, SANS_VIANDE ou POISSON !");;
+	}
+	
 //		
 //		if(choixCode!="99"){
 //			for(int i = 0; i<pizzas.length; i++){

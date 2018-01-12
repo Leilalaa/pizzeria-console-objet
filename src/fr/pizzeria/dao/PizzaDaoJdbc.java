@@ -46,7 +46,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		try {
 		Statement statement = connection.createStatement();
 
-		ResultSet resultats = statement.executeQuery("SELECT * FROM pizza");
+		ResultSet resultats = statement.executeQuery("SELECT * FROM btoapuzaw.pizza");
 
 		while (resultats.next()) {
 
@@ -63,7 +63,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		}
 		statement.close();
 		resultats.close();
-		connection.close();
+
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -78,7 +78,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		
 		try {
 			
-		PreparedStatement updatePizzaSt = connection.prepareStatement("UPDATE PIZZA SET ID=?, PIZZA_NAME=?, PRICE=?, CATEGORY=? WHERE ID=?"); 
+		PreparedStatement updatePizzaSt = connection.prepareStatement("UPDATE btoapuzaw.pizza SET ID=?, PIZZA_NAME=?, PRICE=?, CATEGORY=? WHERE ID=?"); 
 		
 		updatePizzaSt.setString(1,pizza.getCode()); 
 		updatePizzaSt.setString(2,pizza.getNom()); 
@@ -87,7 +87,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		updatePizzaSt.setString(5,choixCode);
 		updatePizzaSt.executeUpdate();
 		updatePizzaSt.close();
-		connection.close();
+
 		
 		
 		} catch (SQLException e) {
@@ -102,7 +102,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		PreparedStatement savePizzaSt;
 		try {
 			
-			savePizzaSt = connection.prepareStatement("INSERT INTO PIZZA VALUES(?,?,?,?)"); 
+			savePizzaSt = connection.prepareStatement("INSERT INTO btoapuzaw.pizza VALUES(?,?,?,?)"); 
 			
 			savePizzaSt.setString(1,pizza.getCode()); 
 			savePizzaSt.setString(2,pizza.getNom()); 
@@ -110,7 +110,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 			savePizzaSt.setString(4,pizza.getCat().toString());
 			savePizzaSt.executeUpdate();
 			savePizzaSt.close();
-			connection.close();
+
 			
 			
 			} catch (SQLException e) {
@@ -122,12 +122,12 @@ public class PizzaDaoJdbc implements IPizzaDao {
 	public boolean deletePizza(String choixCode) {
 		
 		try {
-			PreparedStatement deletePizzaSt = connection.prepareStatement("DELETE FROM PIZZA WHERE ID=?"); 
+			PreparedStatement deletePizzaSt = connection.prepareStatement("DELETE FROM btoapuzaw.pizza WHERE ID=?"); 
 			
 			deletePizzaSt.setString(1,choixCode);  
 			deletePizzaSt.executeUpdate();
 			deletePizzaSt.close();
-			connection.close();
+
 			
 			
 			} catch (SQLException e) {

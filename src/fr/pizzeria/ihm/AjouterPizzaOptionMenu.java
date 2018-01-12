@@ -1,4 +1,5 @@
 package fr.pizzeria.ihm;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
@@ -33,6 +34,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 	
 
 	public void execute() throws SavePizzaException{
+		try{
 		LOG.info("Ajout d\'une nouvelle pizza \n");
 		
 		LOG.info("Veuillez saisir le code\n");
@@ -45,12 +47,18 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 			throw new SavePizzaException("Le prix ne peut pas être négatif !");
 		}
 		LOG.info("Veuillez saisir la categorie de votre pizza (VIANDE, SANS_VIANDE ou POISSON)\n");
+		
 		CategoriePizza choixCat = CategoriePizza.valueOf(sc.next().toUpperCase());
+		
 		
 		Pizza pizza = new Pizza(choixCode, choixNom, choixPrix, choixCat);
 		
 		
 		dao.saveNewPizza(pizza);
+		
+		}catch(IllegalArgumentException e) {
+			LOG.info("Votre catégorie ne peut être que : VIANDE, SANS_VIANDE ou POISSON !");;
+		}
 		
 	}
 
