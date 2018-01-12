@@ -46,7 +46,7 @@ public class PizzaDaoImpl implements IPizzaDao {
 	
 	// Modifier une pizza
 	
-	public boolean updatePizza(String choixCode, Pizza pizza){
+	public boolean updatePizza(String choixCode, Pizza pizza){ // throws PizzaUpdateException
 	
 		for(Pizza p : this.listePizza){
 
@@ -56,7 +56,10 @@ public class PizzaDaoImpl implements IPizzaDao {
 
 				break;
 
-			}
+			} 
+//			else {
+//				throw new UpdatePizzaException("Ce code de pizza n'existe pas !");
+//				}
 
 		}
 		

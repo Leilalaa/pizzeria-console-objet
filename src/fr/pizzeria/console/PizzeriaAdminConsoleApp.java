@@ -4,6 +4,7 @@
  */
 
 package fr.pizzeria.console;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 import org.slf4j.Logger;
@@ -26,6 +27,7 @@ public class PizzeriaAdminConsoleApp {
 	// Attributs
 	
 	static IPizzaDao pizzas = new PizzaDaoJdbc();
+	static ResourceBundle props = ResourceBundle.getBundle("jdbc");
 	
 	
 	

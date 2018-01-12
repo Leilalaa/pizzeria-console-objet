@@ -27,7 +27,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 	}
 
 	
-	public void execute() { //throws UpdatePizzaException
+	public void execute()  { //throws UpdatePizzaException
 		
 		LOG.info("Mise à jour d\'une pizza");
 		

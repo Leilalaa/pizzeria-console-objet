@@ -30,7 +30,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 
 		try {
 
-			Class.forName("org.mariadb.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(url, utilisateur, motDePasse);
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -63,6 +63,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		}
 		statement.close();
 		resultats.close();
+		connection.close();
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -86,10 +87,13 @@ public class PizzaDaoJdbc implements IPizzaDao {
 		updatePizzaSt.setString(5,choixCode);
 		updatePizzaSt.executeUpdate();
 		updatePizzaSt.close();
+		connection.close();
+		
 		
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
 		return false;
 	}
 
@@ -106,6 +110,8 @@ public class PizzaDaoJdbc implements IPizzaDao {
 			savePizzaSt.setString(4,pizza.getCat().toString());
 			savePizzaSt.executeUpdate();
 			savePizzaSt.close();
+			connection.close();
+			
 			
 			} catch (SQLException e) {
 				e.printStackTrace();
@@ -121,6 +127,8 @@ public class PizzaDaoJdbc implements IPizzaDao {
 			deletePizzaSt.setString(1,choixCode);  
 			deletePizzaSt.executeUpdate();
 			deletePizzaSt.close();
+			connection.close();
+			
 			
 			} catch (SQLException e) {
 				e.printStackTrace();
