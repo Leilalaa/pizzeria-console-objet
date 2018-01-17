@@ -1,13 +1,12 @@
 package fr.pizzeria.dao;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
-import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
 
@@ -25,9 +24,9 @@ public class PizzaDaoJdbc implements IPizzaDao {
 
 	}
 
-	public ArrayList<Pizza> findAllPizzas() {
+	public List<Pizza> findAllPizzas() {
 
-		ArrayList<Pizza> pizzas = new ArrayList();
+		List<Pizza> pizzas = new ArrayList();
 
 		TypedQuery<Pizza> query = em.createQuery("from Pizza", Pizza.class);
 

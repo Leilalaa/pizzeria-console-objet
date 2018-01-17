@@ -1,6 +1,8 @@
 package fr.pizzeria.dao;
 
+
 import java.util.ArrayList;
+import java.util.List;
 
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
@@ -14,7 +16,7 @@ public class PizzaDaoImpl implements IPizzaDao {
 	
 
 	
-	public ArrayList<Pizza> listePizza = new ArrayList<Pizza>();
+	public List<Pizza> listePizza = new ArrayList<Pizza>();
 	
 	public PizzaDaoImpl(){
 		
@@ -31,7 +33,7 @@ public class PizzaDaoImpl implements IPizzaDao {
 	}
 	
 	// Lister les pizzas
-	public ArrayList<Pizza> findAllPizzas(){
+	public List<Pizza> findAllPizzas(){
 		return listePizza;
 	}
 	
