@@ -43,8 +43,6 @@ public class PizzaDaoJdbc implements IPizzaDao {
 
 	public boolean updatePizza(String choixCode, Pizza pizza) {
 
-			
-	
 			TypedQuery<Pizza> query = em.createQuery("from Pizza WHERE code=:target", Pizza.class);
 			query.setParameter("target", choixCode);
 			Pizza p = query.getResultList().get(0);
@@ -57,6 +55,7 @@ public class PizzaDaoJdbc implements IPizzaDao {
 			p.setCode(pizza.getCode());
 			
 			et.commit();
+
 		
 	
 		return false;
