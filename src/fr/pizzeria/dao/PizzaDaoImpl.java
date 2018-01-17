@@ -7,8 +7,6 @@ import java.util.List;
 import fr.pizzeria.model.CategoriePizza;
 import fr.pizzeria.model.Pizza;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 
@@ -72,8 +70,7 @@ public class PizzaDaoImpl implements IPizzaDao {
 	
 	public boolean deletePizza(String choixCode){
 		// On parcours le tableau, si on retrouve le code, maj de la pizza
-		Pizza pToDelete = null;
-		
+
 		for(Pizza p : this.listePizza){
 
 			if(p.getCode().equals(choixCode)){

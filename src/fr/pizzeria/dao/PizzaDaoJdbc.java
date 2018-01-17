@@ -19,7 +19,8 @@ public class PizzaDaoJdbc implements IPizzaDao {
 
 	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("pu_pizza");
 	EntityManager em = entityManagerFactory.createEntityManager();
-
+	
+	// Constructeur
 	public PizzaDaoJdbc() {
 
 	}

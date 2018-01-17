@@ -11,10 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.pizzeria.dao.IPizzaDao;
-import fr.pizzeria.dao.PizzaDaoImpl;
 import fr.pizzeria.dao.PizzaDaoJdbc;
 import fr.pizzeria.dao.SavePizzaException;
-import fr.pizzeria.dao.StockageException;
 import fr.pizzeria.ihm.*;
 
 
@@ -109,6 +107,12 @@ public class PizzeriaAdminConsoleApp {
 				case 4:
 					
 					supprimer.execute();
+					
+					break;
+					
+				default:
+					
+					LOG.info("Cette option n'existe pas !");
 					
 					break;
 				}
