@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 import static fr.pizzeria.console.PizzeriaAdminConsoleApp.LOG;
 
-import fr.pizzeria.dao.DeletePizzaException;
 import fr.pizzeria.dao.IPizzaDao;
-import fr.pizzeria.dao.PizzaDaoImpl;
 
 
 
